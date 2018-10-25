@@ -18,7 +18,16 @@ curl.get('https://www.musiciansfriend.com/stupid')
   console.log(savings);
   console.log(price);
 
-  //const postBody = ``;
+  const postBody = `
+  # ${product}
+  
+  ${description}
+  
+  ${regularPrice}
+  ${savings}
+
+  **${price}**
+  `;
 
 })
 .catch((e) => {
